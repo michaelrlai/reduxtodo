@@ -4,6 +4,7 @@ import { TodoContext } from "../context/TodoContext";
 import UpdateTodo from "./UpdateTodo";
 
 const TodoList = (props) => {
+  const { todoList } = useSelector((state) => state.todoList);
   const { todos, setTodos } = useContext(TodoContext);
 
   useEffect(() => {
